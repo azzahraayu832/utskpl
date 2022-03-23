@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Menghitung Nilai IP</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="script.js"></script>
+</head>
+<body>
+<header>
+  <nav class="main-nav">
+    <ul>
+      <li>
+        <ul>
+          <li><a href="index.html" c lass="active">Beranda</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
+<section id="video" class="home">
+</section>
+<section id="main-content">
+  <div class="text-intro">
+    <h2>Program untuk Menghitung Nilai Akhir berdasarkan Mata Kuliah</h2>
+  </div>
+  <div class="columns features" style="width: 50%;">
+    <form action="#" method="post" id="form-nama">
+        <div class="data">
+          <div class="input-group input-group-sm mb-3">
+            <p>NIM &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p> 
+            <input type="text" class="form-control" id="nim" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
+          </div>
+          <div class="input-group input-group-sm mb-3">
+            <p>Nama Mahasiswa &nbsp;  </p> 
+            <input type="text" class="form-control" id="nama" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
+          </div>
+          <div class="input-group input-group-sm mb-3">
+            <p>Mata Kuliah &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p> 
+            <input type="text" class="form-control" id="nm_mk" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
+          </div>
+        </div>
+    </form>
+  </div>
+  <div class="columns features" style="width: 50%;">
+      <form action="#" method="post" id="form-nama">
+        <div class="nilai">
+            <div class="input-group input-group-sm mb-3">
+              <p>Nilai Tugas &nbsp; &nbsp; &nbsp;</p> 
+              <input type="number" class="form-control" id="inputTugas" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
+            </div>
+            <div class="input-group input-group-sm mb-3">
+              <p>Nilai Kuis &nbsp; &nbsp; &nbsp; &nbsp;</p> 
+              <input type="number" class="form-control" id="inputKuis" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
+            </div>
+            <div class="input-group input-group-sm mb-3">
+              <p>Nilai UTS &nbsp; &nbsp; &nbsp; &nbsp;</p> 
+              <input type="number" class="form-control" id="inputUts" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
+            </div>
+            <div class="input-group input-group-sm mb-3">
+              <p>Nilai UAS &nbsp; &nbsp; &nbsp; &nbsp;</p> 
+              <input type="number" class="form-control" id="inputUas" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
+            </div>
+        </div>
+      <button class="btn btn-input" type="button" value="IM DONE" onclick="getInputValue()">SELESAI</button>
+    </div>
+    </form>
+  </div>
+  <div id="content">
+    <table border="10">
+    <tr>
+        <label for="content">Nilai</label><br>
+        <div class="output" id="output"></div>
+    </tr>
+    <tr>
+        <label for="content">Mutu</label><br>
+        <div class="hasil" id="hasil"></div>
+    </tr>
+    <tr>
+        <label for="content">Nama Mahasiswa</label><br>
+        <span class="nama2" id="nama2"></span>
+    </tr>
+    <tr>
+        <label for="content">NIM</label><br>
+        <span class="nim2" id="nim2"></span>
+    </tr>
+    <tr>
+        <label for="content">Derajat Mutu</label><br>
+        <div class="keterangan" id="keterangan"></div>
+    </tr>
+    </table>
+  </div>
+</section>
+
+<footer>
+  <div class="copyright"><small>Copyright. All Rights Reserved | by <a target="_blank" rel="nofollow" href="http://www.iamsupview.be">Supview</a>.</small></div>
+</footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
